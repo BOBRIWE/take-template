@@ -1,0 +1,23 @@
+.full-image
+	position: relative
+	right: calc(1770px / 2 - 50%)
+	margin: 0 auto
+	width: 1800px
+	height: 874px
+	background: no-repeat center url(../images/full-image/image.png)
+	&__a
+		font: 700 14px 'Open Sans', sans-serif
+		color: #ffffff
+		&:hover
+			text-decoration: none
+			color: #ffffff
+			border-bottom: 1px solid #ffffff
+	&__h1
+		margin-top: 451px
+	&_col
+		&_5
+			+make-col(5)
+			+make-col-ready()
+		&_12
+			+make-col(12)
+			+make-col-ready()

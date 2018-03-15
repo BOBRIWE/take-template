@@ -1,0 +1,56 @@
+.buying
+	background-color: #f6f7fa
+	position: relative
+	right: calc(1770px / 2 - 50%)
+	margin: 0 auto
+	width: 1800px
+	height: 665px
+	&__fa
+		color: #c5c5c5
+		font-size: 30px
+		word-spacing: 10px
+	&__button
+		font: 700 13px 'Open Sans', sans-serif
+		color: #ffffff
+		text-transform: uppercase
+		border: none
+		padding: 14.03px 34.615px
+		margin: 15px 0
+		background-color: #82ca9c
+		border-radius: 3px
+		&:hover
+			cursor: pointer
+			background-color: #41654E
+		&:focus
+			outline: none
+	&__plan
+		font: 800 11px 'Open Sans', sans-serif
+		display: inline-block
+		background-color: #e1e1e1
+		color: #ffffff
+		text-transform: uppercase
+		padding: 4.5px 17px
+		border-radius: 5px
+	&__container
+		padding: 46px 54px
+		height: 380px
+		margin-top: 103px
+		transition: .3s
+		&:hover
+			box-shadow: 0px 0px 63px 62px rgba(0, 0, 0, 0.05)
+			-moz-box-shadow: 0px 0px 63px 62px rgba(0, 0, 0, 0.05)
+			-webkit-box-shadow: 0px 0px 63px 62px rgba(0, 0, 0, 0.05)
+			.buying__plan
+				background-color: #bd8cbf
+	&__h2
+		margin: 10px 0
+	&_no-gutters
+		margin-left: -15px
+		margin-right: -15px
+	&_col
+		&_6
+			+make-col(6)
+			+make-col-ready()
+		&_12
+			+make-col(12)
+			+make-col-ready()

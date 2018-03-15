@@ -1,0 +1,67 @@
+.footer
+	position: relative
+	right: calc(1770px / 2 - 50%)
+	margin: 0 auto
+	width: 1800px
+	height: 571px
+	background-color: #192431
+	&__a
+		display: table
+		font: 400 13px/24px 'Open Sans', sans-serif
+		color: #ffffff
+		box-sizing: content-box
+		&:hover
+			margin-bottom: -1px
+			text-decoration: none
+			color: #ffffff
+			border-bottom: 1px solid #ffffff
+	&__button
+		+make-col(2)
+		+make-col-ready()
+		border: none
+		background-color: #82ca9c
+		border-radius: 0 2px 2px 0
+		height: 58px
+		color: #ffffff
+		font-size: 30px
+		&:focus
+			outline: none
+		&:hover
+			cursor: pointer
+			background-color: #41654E
+
+	&__email
+		+make-col(8)
+		+make-col-ready()
+		font: 400 16px 'Open Sans', sans-serif
+		color: #8297a7
+		float: left
+		border: none
+		background-color: #ffffff
+		border-radius: 2px 0 0 2px
+		height: 58px
+		&:focus
+			outline: none
+		&-info
+			+make-col-offset(7)
+			+make-col(5)
+			+make-col-ready()
+			font-size: 12px
+			line-height: 18px
+			color: #57697f
+
+
+	&__h3
+		margin-top: 93px
+	&_col-offset
+		&_1
+			+make-col-offset(2)
+		&_10
+			+make-col-offset(10)
+	&_col
+		&_6
+			+make-col(6)
+			+make-col-ready()
+		&_2
+			+make-col(2)
+			+make-col-ready()
