@@ -1,7 +1,11 @@
 {
   "name": "take-template",
   "version": "0.1.0-pre",
-  "description": "",
+  "description": "PSD template to web",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BOBRIWE/take-template.git"
+  },
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
