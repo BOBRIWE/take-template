@@ -3,10 +3,13 @@
 
 # JS files must always use LF for tools to work
 *.js eol=lf
+<<<<<<< HEAD
 
 *.sass eol=lf
 *.scss eol=lf
 *.css eol=lf
+=======
+>>>>>>> 9f12a33c6442a9d71c562d01ca1efbd7ed7de8ba
 
 package.json text eol=lf
 package-lock.json text eol=lf
