@@ -2,8 +2,11 @@ module.exports = function(grunt) {
     grunt.initConfig({
         sass: {
 			dev: {
+				options: {
+					style: 'compressed'
+				},
 				files: {
-					'dist/stylesheets/main.css': 'src/stylesheets/sass/main.sass'
+					'dist/stylesheets/main.min.css': 'src/stylesheets/sass/main.sass'
 				}
 			}
         },
@@ -34,16 +37,16 @@ module.exports = function(grunt) {
 			}
         },
 		// grunt-sass style: 'compressed' not working
-		cssmin: {
-			options: {
-				sourceMap: true
-			},
-			target: {
-				files: {
-					'dist/stylesheets/main.min.css': 'dist/stylesheets/main.css'
-				}
-			}
-		},
+		// cssmin: {
+		// 	options: {
+		// 		sourceMap: true
+		// 	},
+		// 	target: {
+		// 		files: {
+		// 			'dist/stylesheets/main.min.css': 'dist/stylesheets/main.css'
+		// 		}
+		// 	}
+		// },
         watch: {
             all: {
                 files: ['src/**'],
@@ -60,6 +63,6 @@ module.exports = function(grunt) {
         'newer:copy:html',
 		'newer:copy:img',
 		'newer:copy:fa',
-		'newer:cssmin'
+		//'newer:cssmin'
     ]);
 };
